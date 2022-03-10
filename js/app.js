@@ -143,20 +143,20 @@ const showPosts = (posts) => {
 };
 
 const displayLikedPosts = () => {
-  document.getElementById( "liked" ).textContent = '';
+  document.getElementById( "liked-container" ).textContent = '';
     const likedPosts = getLikedPosts();
     likedPosts.forEach((post) => {
         const div = createPost(post);
-        document.getElementById( "liked" ).appendChild(div);
+        document.getElementById( "liked-container" ).appendChild(div);
     });
 };
 
 const displayReportedPosts = () => {
-  document.getElementById( "reported" ).textContent = '';
+  document.getElementById( "reported-container" ).textContent = '';
     const reportedPosts = getReportedPosts();
     reportedPosts.forEach((post) => {
         const div = createPost(post);
-        document.getElementById( "reported" ).appendChild(div);
+        document.getElementById( "reported-container" ).appendChild(div);
     });
 };
 
