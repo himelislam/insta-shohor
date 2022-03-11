@@ -97,7 +97,7 @@
                     </button>
                   </h2>
                   <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">JavaScript is a single-threaded,interpreted, high level programming language and its created by Brendan Eich in 1995. It has a single call stack and it can handle one task at a time. JavaScript is synchronous and it also use some method like setTimeOut(), setInterval() for asynchronous tasks with help of callback queue.</div>
+                    <div class="accordion-body">JavaScript is a single-threaded,interpreted, high level programming language. Its created by Brendan Eich in 1995. It has a single call stack and it can handle one task at a time. JavaScript is synchronous and it use some methods like setTimeOut(), setInterval() functions for asynchronous tasks with help of event loop.</div>
                   </div>
                 </div>
                 <div class="accordion-item">
@@ -107,7 +107,10 @@
                     </button>
                   </h2>
                   <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Event loop is a loop which is in the inside off every browser engine. It has only one task to monitor the call stack queue. When the call stack is emphty it will push the the event from callback queue.</div>
+                    <div class="accordion-body">The Event Loop is a process that monitor the Call Stack 
+                      and the Callback Queue in every Browser Engine. If the Call Stack is clear, it will 
+                      take the first event from the queue and will push it to the 
+                      Call Stack, and then it runs effectively.</div>
                   </div>
                 </div>
                 <div class="accordion-item">
@@ -117,7 +120,24 @@
                     </button>
                   </h2>
                   <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                    <div class="accordion-body row">
+                      <div class="col-lg-6">
+                          <h6>localStorage:</h6>
+                          <ul>
+                            <li>In localStorage the data is persisted in the browser until the user manually clear the browser cache.</li>
+                            <li>The storage capacity of local storage is 5MB/10MB</li>
+                            <li>The localStorage data is accessible from any window.</li>
+                          </ul>
+                      </div>
+                      <div class="col-lg-6">
+                        <h6>sessionStorage:</h6>
+                        <ul>
+                          <li>In sessionStorage the data is persisted only until the window or tab is closed.</li>
+                          <li>The storage capacity of session storage is 5MB</li>
+                          <li>The sessionStorage data is accessible only in same tab.</li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
